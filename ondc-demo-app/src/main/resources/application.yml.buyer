@@ -1,0 +1,19 @@
+server:
+  port: 8084
+ehcache:
+  cacheregion:
+    beckn-api:
+      common-cache:
+        timetolive: 86400
+        entrycount: 1000
+      lookup-cache:
+        timetolive: 1800
+        entrycount: 1000
+beckn:
+  persistence:
+    type: http
+    audit-schema-error: true
+    file-path: ./
+  entity:
+    type: buyer
+debug: true
