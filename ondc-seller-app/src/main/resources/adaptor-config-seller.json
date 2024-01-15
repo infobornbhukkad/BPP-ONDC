@@ -1,0 +1,136 @@
+[
+	{
+		"subscriber_id": "bpp.bornbhukkad.in",
+		"subscriberlogistic_id": "bap.logistic.bornbhukkad.in",
+		"subscriber_url": "https://seller.bornbhukkad.info/seller/adaptor/",
+		"subscriberlogistic_url": "https://logistic.bornbhukkad.info/buyer/adaptor/",
+		"contexturl" : "https://seller.bornbhukkad.info:443",
+		"beckn_gateway":"https://pilot-gateway-1.beckn.nsdl.co.in",
+		"keyid": "182",
+		"beckn_ttl": "600000",
+		"wait_time":"10000",
+		"subscriber_name": "BornBhukkad",
+		"version": "1.2.0",		
+		"disable_adaptor_calls": "true",		
+		"whitelist_baps": "https://api-testing.phonepe.com/apis/osmos/logistics/,sandbox.hitbyseo.com/delivery/bap,bap.bornbhukkad.in",
+		"logistic_domain": "nic2004:60232",		
+		"signing": {
+			"certificate_used": false,
+			"private_key": "cMm62dmDif6IvHLDzQfNeTQAJNJ5u9FfutTwlz5Bzag=",
+			"logisticprivate_key": "5ve0Q6EcVIlpHLP01mpO+fWLIQAwVURj87mvldlwPlM="
+		},
+		"api": [
+			{
+				"name": "search",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/search",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "select",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/select",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "cancel",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/cancel",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "confirm",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/confirm",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "init",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/init",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "rating",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/rating",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "status",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/status",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "support",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/support",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "track",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/track",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "update",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/update",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "lookup",
+				"http_entity_endpoint": "https://pilot-gateway-1.beckn.nsdl.co.in/lookup",
+				"http_timeout": 9000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": false
+			}
+		],
+		"domains_list": [
+			{
+				"domain": "ONDC:RET10",
+				"domain_name": "Grocery",
+				"method_name": "queryFormationGrocery"
+			},
+			{
+				"domain": "ONDC:RET11",
+				"domain_name": "F&B",
+				"method_name": "queryFormationFood"
+			}
+		]
+	}
+]
